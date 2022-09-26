@@ -1,0 +1,85 @@
+.resume { 
+    padding-top: 120px;
+    &__wrapper {
+        padding: 60px 65px 0 65px;
+        display: grid;
+        grid-template-columns: repeat(2, 425px);
+        column-gap: 136px;
+        row-gap: 45px;
+    }
+    &__column {
+        &-title {
+            padding-left: 35px;
+            position: relative;
+            &::before {
+                content: '';
+                position: absolute;
+                top: 50%;
+                left: -6.5px;
+                transform: translateY(-50%);
+                width: 15px;
+                height: 15px;
+                background-color: $main-color;
+                border-radius: 100%;
+                border: none;
+            }
+        }
+    }
+    ul {
+        list-style-type: none;
+        li {
+            position: relative;
+            &::after {
+                content: '';
+                position: absolute;
+                width: 1px;
+                height: calc(100% + 16px);
+                top: -16px;
+                left: 0;
+                background-color: #000;
+            }
+        }
+    }
+    &__item {
+        position: relative;
+        &::before {
+            content: '';
+            width: 45px;
+            height: 1px;
+            background-color: #000;
+            position: absolute;
+            top: 68px;
+        }
+        &-head {
+            position: relative;
+            padding: 45px 0 0 99px;
+            h4 {
+                margin-bottom: 0;
+            }
+        }
+        &-body {
+            padding-left: 43px;
+            margin-top: 12px;
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 18px;
+        }
+        &-icon {
+            position: absolute;
+            top: 50px;
+            left: 45px;
+            @include before_circle;
+            img {
+                position: absolute;
+                left: 17px;
+                top: 14px;
+            }
+        }
+        &-location {
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 18px;
+            margin-top: 5px;
+        }
+    }
+}

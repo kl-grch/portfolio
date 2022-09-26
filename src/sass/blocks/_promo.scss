@@ -10,8 +10,9 @@
         @include before_circle;
     }
     &__title {
-        width: 600px;
+        width: 530px;
         margin-top: 10px;
+        padding-right: 10px;
     }
     &__btns {
         margin-top: 25px;
