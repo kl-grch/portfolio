@@ -1,5 +1,6 @@
 .about { 
-    padding-top: 120px;
+    padding-top: 80px;
+    margin-bottom: 10px;
     &__wrapper {
         display: grid;
         grid-template-columns: 400px 670px;
@@ -36,8 +37,8 @@
     &__skills {
         display: grid;
         grid-template-columns: repeat(2, 260px);
-        grid-template-rows: repeat(2, minmax(115px, auto));
-        grid-auto-rows: 1fr;
+        grid-template-rows: minmax(115px, auto);
+        grid-auto-rows: minmax(115px, auto);
         column-gap: 50px;
         row-gap: 20px;
         &-item {
@@ -58,6 +59,9 @@
             margin-top: 6px;
             font-size: 12px;
             line-height: 18px;
+            ul {
+                padding: 10px;
+            }
         }
         
     }

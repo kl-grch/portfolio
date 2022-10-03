@@ -15,5 +15,8 @@
     "last 1 version",
     "> 1%",
     "IE 11"
-  ]
+  ],
+  "scripts": {
+    "gulp": "gulp"
+  }
 }

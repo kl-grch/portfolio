@@ -68,4 +68,5 @@ gulp.task('images', function() {
         .pipe(browserSync.stream());
 });
 
+
 gulp.task('default', gulp.parallel('watch', 'server', 'styles', 'html', 'scripts', 'fonts', 'icons', 'images'));

@@ -34,9 +34,8 @@
     .skills {
         &__items {
             grid-template-columns: repeat(3, 270px);
-            grid-template-rows: repeat(3, minmax(270px, auto));
+            grid-template-rows: repeat(2, minmax(270px, auto));
             grid-auto-rows: minmax(270px, auto);
-            justify-content: center;
         }
         &__ratings {
             width: 100%;
@@ -53,7 +52,7 @@
         &__wrapper {
             grid-template-columns: repeat(auto-fit, 280px);
             grid-auto-rows: 280px;
-            justify-content: space-around;
+            justify-content: center;
             row-gap: 20px;
             .horizontal {
                 grid-row: unset;
@@ -84,7 +83,10 @@
         max-width: 720px;
     }
     .promo {
-        background: url('../img/main_bg.jpeg') no-repeat 15%/cover;
+        background: url('../img/main_bg.jpeg') no-repeat 0%/cover;
+        &__title {
+            width: 410px;
+        }
     }
 
     .about {
@@ -93,7 +95,7 @@
         }
         &__skills {
             grid-template-columns: 380px;
-            grid-template-rows: repeat(2, minmax(90px, auto));
+            grid-template-rows: minmax(90px, auto);
             grid-auto-rows: minmax(90px, auto);
             &-item {
                 grid-template-columns: 40px 320px;
@@ -101,12 +103,8 @@
             }
         }
     }
-    .title {
-        &_fz36 {
-            font-size: 30px;
-        }
-    }
     .resume {
+        padding-top: 60px;
         &__wrapper {
             padding: 60px 20px 0 20px;
             grid-template-columns: repeat(2, 1fr);
@@ -139,6 +137,15 @@
         &__wrapper {
             grid-template-columns: 1fr;
         }
+        &__text {
+            &-form {
+                display: none;
+
+            }
+        }
+        &__form {
+            display: none;
+        }
     }
 
 }
@@ -149,6 +156,9 @@
     }
     .promo {
         background: url('../img/main_bg.jpeg') no-repeat 30%/cover;
+        &__title {
+            width: 350px;
+        }
     }
     .title {
         &_fz48 {
@@ -204,7 +214,14 @@
        padding: 0 10px;
     }
     .promo {
-        background: url('../img/main_bg.jpeg') no-repeat 40%/cover;
+        background: url('../img/main_bg.jpeg') no-repeat 33%/cover;
+        &__title {
+            width: 280px;
+        }
+        &__btns {
+            width: 240px;
+        }
+
     }
 
     .title {

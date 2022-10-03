@@ -8,8 +8,11 @@
     align-items: center;
     justify-content: space-between;
     z-index: 3;
-    &__link {
-        
+    a {
+        img {
+            width: 20px;
+            height: 100%;
+        }
     }
     &__divider {
         background-color: #000;
