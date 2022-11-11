@@ -2,16 +2,17 @@
 
 const humburger = document.querySelector('.hamburger');
 const menu = document.querySelector('.menu');
-const closed = document.querySelector('.menu__close');
+const closedd = document.querySelector('.menu__close');
 const menuLinks = document.querySelectorAll('.menu__link');
 
 humburger.addEventListener('click', function() {
     menu.classList.add('active');
 });
 
-closed.addEventListener('click', function() {
+closedd.addEventListener('click', function() {
     menu.classList.remove('active');
 });
+
 
 menuLinks.forEach(link => {
     link.addEventListener('click', () => {
